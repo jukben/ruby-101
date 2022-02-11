@@ -1,0 +1,22 @@
+AllCops:
+  EnabledByDefault: true
+  Exclude:
+    - 'bin/*'
+
+Style/Copyright:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/DocumentationMethod:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Bundler/GemComment:
+  Enabled: false
+
+Bundler/GemVersion: 
+  Enabled: false
