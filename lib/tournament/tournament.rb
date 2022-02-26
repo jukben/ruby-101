@@ -10,7 +10,10 @@ class Game
 
   def print_table
     # sort it, alphabeticaly and by points
-    rows = @points.keys.map(&method(:print_row)).sort_by { |_k, v| v[:age] }
+    rows =
+      @points.sort_by { |k, v| [-v.to_i, k] }
+             .map { |item| print_row(item[0]) }
+             .join
 
     "#{print_header}#{rows unless rows.nil?}"
   end
@@ -18,7 +21,6 @@ class Game
   private
 
   def print_header
-    p('lol')
     <<~TABLE
       #{format_name('Team')} | MP |  W |  D |  L |  P
     TABLE
@@ -52,7 +54,7 @@ class Game
       @loses[a] += 1
       @wins[b] += 1
       @points[b] += 3
-      @points[a] = 0
+      @points[a] += 0
     end
   end
 end

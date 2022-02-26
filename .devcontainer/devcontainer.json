@@ -32,7 +32,8 @@
 		"castwide.solargraph",
 		"wingrunr21.vscode-ruby",
 		"KoichiSasada.vscode-rdbg",
-		"misogi.ruby-rubocop"
+		"misogi.ruby-rubocop",
+		"eamodio.gitlens"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
