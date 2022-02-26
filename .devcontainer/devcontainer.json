@@ -24,7 +24,16 @@
 		// If not specified, it assumes a null value by default.
 		"ruby.rubocop.configFilePath": ".rubocop.yml",
 		// default true
-		"ruby.rubocop.onSave": true
+		"ruby.rubocop.onSave": true,
+		"terminal.integrated.profiles.linux": {
+			"SSH to host": {
+				"path": "ssh",
+				"icon": "terminal-bash",
+				"args": [
+					"host",
+				],
+			},
+		},
 	},
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
