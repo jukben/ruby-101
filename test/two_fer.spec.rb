@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'two_fer'
+require_relative '../lib/two_fer/two_fer'
 
 class TwoFerTest < ::Minitest::Test
   def test_no_name_given
