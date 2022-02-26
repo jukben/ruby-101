@@ -1,1 +1,2 @@
-.devcontainer/ssh-config/key/*
+.devcontainer/ssh-config/key/ssh-docker*
+
